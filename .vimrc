@@ -37,9 +37,11 @@ nnoremap j gj
 nnoremap k gk
 " シンタックスハイライトの有効化
 syntax enable
-
+" バックスペースでの削除をいつでも有効にする
+set backspace=indent,eol,start
 "左右のカーソル移動で行間移動可能にする。
-set whichwrap=b,s,<,>,[,]
+set nocompatible
+set whichwrap=b,s,h,l,<,>,[,]
 
 " Tab系
 " 不可視文字を可視化(タブが「▸-」と表示される)
