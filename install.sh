@@ -28,11 +28,11 @@ setup() {
     [[ "$f" == ".git" ]] && continue
     #[[ "$f" == "." ]] && continue
   
-    #echo "$f"
     ln -s "$dotfiles/$f" ~/"$f"
-  
-  
   done
+
+  source "$dotfiles"/scripts/brew.sh
+
 }
 
 setup
